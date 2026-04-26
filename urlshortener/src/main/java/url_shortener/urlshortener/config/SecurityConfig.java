@@ -27,7 +27,7 @@ public class SecurityConfig {
                         // Public URL info
                         .requestMatchers(HttpMethod.GET, "/api/v1/urls/{shortCode}").permitAll()
                         // Swagger / OpenAPI
-                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
+                        .requestMatchers("/swagger-ui/**", "/v1/api-docs/**").permitAll()
                         // Actuator health
                         .requestMatchers("/actuator/health", "/actuator/info").permitAll()
                         // Everything else requires auth

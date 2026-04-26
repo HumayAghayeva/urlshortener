@@ -132,7 +132,7 @@ public final class UrlDtos {
     @AllArgsConstructor
     @Builder
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    public class ErrorResponse {
+    public static class ErrorResponse {
         private int status;
         private String error;
         private String message;
